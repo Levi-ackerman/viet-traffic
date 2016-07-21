@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:customTableLayout="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/special"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/spacing_normal"
+              tools:context="levistudio.com.viettraffic.views.fragments.MenuTrafficJamFragment">
+
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_test"/>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:text="Facebook"
+        android:textColor="@color/white"/>
+
+    <levistudio.com.viettraffic.views.ui.CustomTableLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginTop="@dimen/spacing_normal"
+        customTableLayout:column="3"
+        customTableLayout:row="1">
+
+        <LinearLayout
+            android:id="@+id/view_item_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_small"
+            android:background="#E18270">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_test"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="Facebook"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Title"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_small"
+            android:background="#F7C457">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_test"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="Facebook"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Title"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_small"
+            android:background="#43B59B">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_test"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="Facebook"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Title"/>
+
+
+        </LinearLayout>
+
+    </levistudio.com.viettraffic.views.ui.CustomTableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/btnAddPhoto"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_camera_white_56dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/spacing_huge"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="1dp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:layout_toRightOf="@+id/btnAddPhoto"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_normal"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/btnAddDescription"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_textsms_white_56dp"
+            android:scaleType="centerCrop"
+            android:layout_toRightOf="@+id/view_divider"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

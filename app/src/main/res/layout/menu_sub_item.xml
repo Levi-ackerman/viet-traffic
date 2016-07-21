@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/spacing_normal"
+    android:clickable="true"
+    app:cardBackgroundColor="@color/accent"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/spacing_tiny"
+    app:cardElevation="@dimen/spacing_tiny">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/spacing_normal">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_menu_item_test"/>
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
