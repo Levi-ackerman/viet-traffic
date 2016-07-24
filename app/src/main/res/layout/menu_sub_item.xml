@@ -23,7 +23,7 @@
             android:layout_height="72dp"
             android:layout_centerHorizontal="true"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_menu_item_test"/>
+            app:srcCompat="@drawable/ic_menu_item_test"/>
 
         <TextView
             android:id="@+id/text_title"

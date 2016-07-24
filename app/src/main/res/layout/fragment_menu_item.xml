@@ -1,183 +1,256 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<levistudio.com.viettraffic.views.ui.CustomTableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:customTableLayout="http://schemas.android.com/apk/res-auto"
+    xmlns:menuItem="http://schemas.android.com/apk/res-auto"
+    customTableLayout:column="2"
+    customTableLayout:row="3">
+
+    <levistudio.com.viettraffic.views.ui.MenuItem
+        android:id="@+id/item_traffic_jam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E18270"
+        menuItem:iconWidth="@dimen/img_width_huge"
+        menuItem:iconHeight="@dimen/img_width_huge"
+        menuItem:iconId="@drawable/ic_test"
+        menuItem:title="Kẹt Xe"/>
+
+    <levistudio.com.viettraffic.views.ui.MenuItem
+        android:id="@+id/item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        menuItem:iconWidth="@dimen/img_width_huge"
+        menuItem:iconHeight="@dimen/img_width_huge"
+        menuItem:iconId="@drawable/ic_test"
+        menuItem:title="Kẹt Xe"/>
+
+    <levistudio.com.viettraffic.views.ui.MenuItem
+        android:id="@+id/item3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F7C457"
+        menuItem:iconWidth="@dimen/img_width_huge"
+        menuItem:iconHeight="@dimen/img_width_huge"
+        menuItem:iconId="@drawable/ic_test"
+        menuItem:title="Kẹt Xe"/>
+
+    <levistudio.com.viettraffic.views.ui.MenuItem
+        android:id="@+id/item4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E18270"
+        menuItem:iconId="@drawable/ic_test"
+        menuItem:title="Kẹt Xe"
+        menuItem:iconWidth="@dimen/img_width_huge"
+        menuItem:iconHeight="@dimen/img_width_huge"/>
+
+    <levistudio.com.viettraffic.views.ui.MenuItem
+        android:id="@+id/item5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E18270"
+        menuItem:iconWidth="@dimen/img_width_huge"
+        menuItem:iconHeight="@dimen/img_width_huge"
+        menuItem:iconId="@drawable/ic_test"
+        menuItem:title="Kẹt Xe"/>
+
+    <levistudio.com.viettraffic.views.ui.MenuItem
+        android:id="@+id/item6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#43B59B"
+        menuItem:iconWidth="@dimen/img_width_huge"
+        menuItem:iconHeight="@dimen/img_width_huge"
+        menuItem:iconId="@drawable/ic_test"
+        menuItem:title="Kẹt Xe"/>
+
+</levistudio.com.viettraffic.views.ui.CustomTableLayout>
+
+    <!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal">
+
+       &lt;!&ndash;horizontal&ndash;&gt;
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_weight="1">
+          &lt;!&ndash;item 1&ndash;&gt;
+          <LinearLayout
+              android:id="@+id/view_item_1"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="horizontal">
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:orientation="vertical"
+              android:padding="@dimen/spacing_normal"
+              android:background="#482345">
 
-   <!--horizontal-->
-   <LinearLayout
-       android:layout_width="0dp"
-       android:layout_height="match_parent"
-       android:orientation="vertical"
-       android:layout_weight="1">
-      <!--item 1-->
-      <LinearLayout
-          android:id="@+id/view_item_1"
-          android:layout_width="match_parent"
-          android:layout_height="0dp"
-          android:layout_weight="1"
-          android:orientation="vertical"
-          android:padding="@dimen/spacing_normal"
-          android:background="#482345">
+             <ImageView
+                 android:layout_width="96dp"
+                 android:layout_height="96dp"
+                 android:src="@drawable/ic_test"
+                 android:scaleType="centerCrop"
+                 android:layout_gravity="center"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/spacing_normal"
+                 android:text="Facebook"
+                 android:layout_gravity="center"
+                 android:textColor="@color/white"
+                 style="@style/TextAppearance.AppCompat.Headline"/>
 
-         <ImageView
-             android:layout_width="96dp"
-             android:layout_height="96dp"
-             android:src="@drawable/ic_test"
-             android:scaleType="centerCrop"
-             android:layout_gravity="center"/>
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="@dimen/spacing_normal"
-             android:text="Facebook"
-             android:layout_gravity="center"
-             android:textColor="@color/white"
-             style="@style/TextAppearance.AppCompat.Headline"/>
+          </LinearLayout>
+          &lt;!&ndash;item 2&ndash;&gt;
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:orientation="vertical"
+              android:padding="@dimen/spacing_normal"
+              android:background="#B0606D">
 
-      </LinearLayout>
-      <!--item 2-->
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="0dp"
-          android:layout_weight="1"
-          android:orientation="vertical"
-          android:padding="@dimen/spacing_normal"
-          android:background="#B0606D">
-
-         <ImageView
-             android:layout_width="96dp"
-             android:layout_height="96dp"
-             android:src="@drawable/ic_test"
-             android:scaleType="centerCrop"
-             android:layout_gravity="center"/>
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="@dimen/spacing_normal"
-             android:text="Facebook"
-             android:layout_gravity="center"
-             android:textColor="@color/white"
-             style="@style/TextAppearance.AppCompat.Headline"/>
+             <ImageView
+                 android:layout_width="96dp"
+                 android:layout_height="96dp"
+                 android:src="@drawable/ic_test"
+                 android:scaleType="centerCrop"
+                 android:layout_gravity="center"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/spacing_normal"
+                 android:text="Facebook"
+                 android:layout_gravity="center"
+                 android:textColor="@color/white"
+                 style="@style/TextAppearance.AppCompat.Headline"/>
 
 
-      </LinearLayout>
-      <!--item 3-->
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="0dp"
-          android:layout_weight="1"
-          android:orientation="vertical"
-          android:padding="@dimen/spacing_normal"
-          android:background="#F7C457">
+          </LinearLayout>
+          &lt;!&ndash;item 3&ndash;&gt;
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:orientation="vertical"
+              android:padding="@dimen/spacing_normal"
+              android:background="#F7C457">
 
-         <ImageView
-             android:layout_width="96dp"
-             android:layout_height="96dp"
-             android:src="@drawable/ic_test"
-             android:scaleType="centerCrop"
-             android:layout_gravity="center"/>
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="@dimen/spacing_normal"
-             android:text="Facebook"
-             android:layout_gravity="center"
-             android:textColor="@color/white"
-             style="@style/TextAppearance.AppCompat.Headline"/>
-
-
-      </LinearLayout>
-
-   </LinearLayout>
-
-   <!--horizontal-->
-   <LinearLayout
-       android:layout_width="0dp"
-       android:layout_height="match_parent"
-       android:orientation="vertical"
-       android:layout_weight="1">
-
-      <!--item 4-->
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="0dp"
-          android:layout_weight="1"
-          android:orientation="vertical"
-          android:padding="@dimen/spacing_normal"
-          android:background="#653753">
-
-         <ImageView
-             android:layout_width="96dp"
-             android:layout_height="96dp"
-             android:src="@drawable/ic_test"
-             android:scaleType="centerCrop"
-             android:layout_gravity="center"/>
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="@dimen/spacing_normal"
-             android:text="Facebook"
-             android:layout_gravity="center"
-             android:textColor="@color/white"
-             style="@style/TextAppearance.AppCompat.Headline"/>
+             <ImageView
+                 android:layout_width="96dp"
+                 android:layout_height="96dp"
+                 android:src="@drawable/ic_test"
+                 android:scaleType="centerCrop"
+                 android:layout_gravity="center"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/spacing_normal"
+                 android:text="Facebook"
+                 android:layout_gravity="center"
+                 android:textColor="@color/white"
+                 style="@style/TextAppearance.AppCompat.Headline"/>
 
 
-      </LinearLayout>
-      <!--item 5-->
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="0dp"
-          android:layout_weight="1"
-          android:orientation="vertical"
-          android:padding="@dimen/spacing_normal"
-          android:background="#E18270">
+          </LinearLayout>
 
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="@dimen/spacing_normal"
-             android:text="Facebook"
-             android:layout_gravity="center"
-             android:textColor="@color/white"
-             style="@style/TextAppearance.AppCompat.Headline"/>
+       </LinearLayout>
 
-         <ImageView
-             android:layout_width="96dp"
-             android:layout_height="96dp"
-             android:src="@drawable/ic_test"
-             android:scaleType="centerCrop"
-             android:layout_gravity="center"
-             android:id="@+id/imageView2"/>
+       &lt;!&ndash;horizontal&ndash;&gt;
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_weight="1">
 
+          &lt;!&ndash;item 4&ndash;&gt;
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:orientation="vertical"
+              android:padding="@dimen/spacing_normal"
+              android:background="#653753">
 
-      </LinearLayout>
-      <!--item 6-->
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="0dp"
-          android:layout_weight="1"
-          android:orientation="vertical"
-          android:padding="@dimen/spacing_normal"
-          android:background="#43B59B">
-
-         <ImageView
-             android:layout_width="96dp"
-             android:layout_height="96dp"
-             android:src="@drawable/ic_test"
-             android:scaleType="centerCrop"
-             android:layout_gravity="center"/>
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="@dimen/spacing_normal"
-             android:text="Facebook"
-             android:layout_gravity="center"
-             android:textColor="@color/white"
-             style="@style/TextAppearance.AppCompat.Headline"/>
+             <ImageView
+                 android:layout_width="96dp"
+                 android:layout_height="96dp"
+                 android:src="@drawable/ic_test"
+                 android:scaleType="centerCrop"
+                 android:layout_gravity="center"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/spacing_normal"
+                 android:text="Facebook"
+                 android:layout_gravity="center"
+                 android:textColor="@color/white"
+                 style="@style/TextAppearance.AppCompat.Headline"/>
 
 
-      </LinearLayout>
+          </LinearLayout>
+          &lt;!&ndash;item 5&ndash;&gt;
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:orientation="vertical"
+              android:padding="@dimen/spacing_normal"
+              android:background="#E18270">
 
-   </LinearLayout>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/spacing_normal"
+                 android:text="Facebook"
+                 android:layout_gravity="center"
+                 android:textColor="@color/white"
+                 style="@style/TextAppearance.AppCompat.Headline"/>
 
-</LinearLayout>
+             <ImageView
+                 android:layout_width="96dp"
+                 android:layout_height="96dp"
+                 android:src="@drawable/ic_test"
+                 android:scaleType="centerCrop"
+                 android:layout_gravity="center"
+                 android:id="@+id/imageView2"/>
+
+
+          </LinearLayout>
+          &lt;!&ndash;item 6&ndash;&gt;
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:orientation="vertical"
+              android:padding="@dimen/spacing_normal"
+              android:background="#43B59B">
+
+             <ImageView
+                 android:layout_width="96dp"
+                 android:layout_height="96dp"
+                 android:src="@drawable/ic_test"
+                 android:scaleType="centerCrop"
+                 android:layout_gravity="center"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/spacing_normal"
+                 android:text="Facebook"
+                 android:layout_gravity="center"
+                 android:textColor="@color/white"
+                 style="@style/TextAppearance.AppCompat.Headline"/>
+
+
+          </LinearLayout>
+
+       </LinearLayout>
+
+    </LinearLayout>
+    -->

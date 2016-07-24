@@ -30,6 +30,7 @@ public class CustomTableLayout extends ViewGroup {
 
     public CustomTableLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init(context, attrs);
     }
 
     private void init(Context context, AttributeSet attrs) {
@@ -50,7 +51,6 @@ public class CustomTableLayout extends ViewGroup {
         if (row <= 0 || column <= 0) {
             return;
         }
-
         int numOfItem = row * column;
         int width = right - left;
         int height = bottom - top;

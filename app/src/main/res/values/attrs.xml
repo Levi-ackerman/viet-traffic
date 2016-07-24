@@ -4,4 +4,11 @@
         <attr name="row" format="integer"/>
         <attr name="column" format="integer"/>
     </declare-styleable>
+
+    <declare-styleable name="MenuItem">
+        <attr name="title" format="string"/>
+        <attr name="iconId" format="integer"/>
+        <attr name="iconWidth" format="dimension"/>
+        <attr name="iconHeight" format="dimension"/>
+    </declare-styleable>
 </resources>

@@ -1,6 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:customTableLayout="http://schemas.android.com/apk/res-auto"
               xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:menuItem="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="@color/special"
@@ -13,7 +15,7 @@
         android:layout_height="112dp"
         android:layout_gravity="center"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_test"/>
+        app:srcCompat="@drawable/ic_test"/>
 
     <TextView
         style="@style/TextAppearance.AppCompat.Headline"
@@ -31,79 +33,35 @@
         customTableLayout:column="3"
         customTableLayout:row="1">
 
-        <LinearLayout
-            android:id="@+id/view_item_1"
+        <levistudio.com.viettraffic.views.ui.MenuItem
+            android:id="@+id/item_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/spacing_small"
-            android:background="#E18270">
+            android:background="#E18270"
+            menuItem:iconWidth="@dimen/img_width_normal"
+            menuItem:iconHeight="@dimen/img_width_normal"
+            menuItem:iconId="@drawable/ic_test"
+            menuItem:title="Kẹt Xe"/>
 
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:src="@drawable/ic_test"
-                android:scaleType="centerCrop"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_small"
-                android:text="Facebook"
-                android:layout_gravity="center"
-                android:textColor="@color/white"
-                style="@style/TextAppearance.AppCompat.Title"/>
-
-        </LinearLayout>
-
-        <LinearLayout
+        <levistudio.com.viettraffic.views.ui.MenuItem
+            android:id="@+id/item_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/spacing_small"
-            android:background="#F7C457">
+            android:background="#F7C457"
+            menuItem:iconWidth="@dimen/img_width_normal"
+            menuItem:iconHeight="@dimen/img_width_normal"
+            menuItem:iconId="@drawable/ic_test"
+            menuItem:title="Kẹt Xe"/>
 
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:src="@drawable/ic_test"
-                android:scaleType="centerCrop"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_small"
-                android:text="Facebook"
-                android:layout_gravity="center"
-                android:textColor="@color/white"
-                style="@style/TextAppearance.AppCompat.Title"/>
-
-        </LinearLayout>
-
-        <LinearLayout
+        <levistudio.com.viettraffic.views.ui.MenuItem
+            android:id="@+id/item_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/spacing_small"
-            android:background="#43B59B">
-
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:src="@drawable/ic_test"
-                android:scaleType="centerCrop"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_small"
-                android:text="Facebook"
-                android:layout_gravity="center"
-                android:textColor="@color/white"
-                style="@style/TextAppearance.AppCompat.Title"/>
-
-
-        </LinearLayout>
+            android:background="#43B59B"
+            menuItem:iconWidth="@dimen/img_width_normal"
+            menuItem:iconHeight="@dimen/img_width_normal"
+            menuItem:iconId="@drawable/ic_test"
+            menuItem:title="Kẹt Xe"/>
 
     </levistudio.com.viettraffic.views.ui.CustomTableLayout>
 
@@ -111,11 +69,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:id="@+id/btnAddPhoto"
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:src="@drawable/ic_camera_white_56dp"
+            app:srcCompat="@drawable/ic_camera_white_56dp"
             android:scaleType="centerCrop"
             android:layout_marginLeft="@dimen/spacing_huge"
             android:layout_centerVertical="true"/>
@@ -129,11 +87,11 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/spacing_normal"/>
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:id="@+id/btnAddDescription"
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:src="@drawable/ic_textsms_white_56dp"
+            app:srcCompat="@drawable/ic_textsms_white_56dp"
             android:scaleType="centerCrop"
             android:layout_toRightOf="@+id/view_divider"
             android:layout_marginLeft="@dimen/spacing_normal"

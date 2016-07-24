@@ -1,9 +1,11 @@
 package levistudio.com.viettraffic.views.activities;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -31,7 +33,8 @@ public class MainMenuActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        mToolbar.setNavigationIcon(ContextCompat.getDrawable(this, R.drawable.ic_close));
+        Drawable icon = ContextCompat.getDrawable(MainMenuActivity.this, R.drawable.ic_close);
+        mToolbar.setNavigationIcon(icon);
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
